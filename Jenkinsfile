@@ -1,7 +1,7 @@
 node{
 	stage('SCM Checkout'){
-		cd /home/ec2-user
-		mkdir docker-react
+		sh 'cd /home/ec2-user'
+		sh 'mkdir docker-react'
 		git 'https://github.com/ravindkm/docker-react.git'
 	}
 	stage('Compile-Package'){
