@@ -4,6 +4,6 @@ node{
 	}
 	stage('Compile-Package'){
 		echo 'download done'
-		echo pwd
+		echo ls
 	}
 }
