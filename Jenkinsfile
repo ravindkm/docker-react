@@ -9,7 +9,7 @@ node{
 	}
 	stage('Docker build'){
 		sh 'cd /tmp/docker-react-proj'
-		/*sh 'docker build -f Dockerfile.dev -t my-jenkins-docker:latest .'*/
-		app = docker.build("my-jenkins-docker")
+		sh 'docker build -f Dockerfile.dev -t ravindkm/my-jenkins-docker:latest .'
+		
 	}
 }
