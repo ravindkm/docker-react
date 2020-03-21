@@ -7,4 +7,7 @@ node{
 	stage('Compile-Package'){
 		echo 'download done'
 	}
+	stage('Docker build'){
+		docker build -f Dockerfile.dev -t my-jenkins-docker:latest .
+	}
 }
