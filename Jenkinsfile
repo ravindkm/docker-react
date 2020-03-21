@@ -9,8 +9,6 @@ node{
 	}
 	stage('Docker build'){
 		sh 'cd /tmp/docker-react-proj'
-		sh 'usermod -aG docker ravindkm'
-		sh 'su -s ravindkm'
 		sh 'docker build -f Dockerfile.dev -t my-jenkins-docker:latest .'
 	}
 }
